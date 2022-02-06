@@ -1,9 +1,13 @@
-import axios from 'axios'
+import axios from "axios";
 
 const date = new Date().toLocaleDateString("sv-SE");
 
 const games = axios.create({
-      baseURL: 'https://balldontlie.io/api/v1/games'
-})
+  baseURL: "https://cors-anywhere.herokuapp.com/https://balldontlie.io/api/v1/",
+  params: {
+    start_date: date,
+    end_date: date,
+  },
+});
 
 export default games;

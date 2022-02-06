@@ -1,19 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import games from "../api/games";
 
-const [games, setGames] = useState('');
+// const [newGames, setNewGames] = useState("");
 
-const newGames = async (date) => {
-  const response = await games.get('', {
-    dates: date
+const results = async () => {
+  await games.get("games", {}).then((res) => {
+    console.log(res);
   });
-
-  
-}
-
-
+};
 
 const Row = () => {
+  results();
   return (
     <div className="ui grid">
       <div className="four wide column">A</div>
