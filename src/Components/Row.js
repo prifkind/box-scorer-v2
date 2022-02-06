@@ -1,22 +1,36 @@
-import React, { useState, useEffect } from "react";
-import games from "../api/games";
+import React, { useEffect } from "react";
 
-// const [newGames, setNewGames] = useState("");
+const Row = ({ querySubmit, games }) => {
 
-const results = async () => {
-  await games.get("games", {}).then((res) => {
-    console.log(res);
-  });
-};
+  useEffect(() => {
+    querySubmit();
+  }, []);
 
-const Row = () => {
-  results();
+  useEffect(
+    () => {
+      renderItems();
+    },
+    [games]
+  );
+
+  const renderItems = () => {
+    games.map((g) => {
+      const homeTeam = g.home_team.full_name;
+      const visitorTeam = g.visitor_team.full_name;
+      console.log(homeTeam, visitorTeam);
+      return (
+        <div className="ui grid">
+          <div className="four wide column">{homeTeam}</div>
+          <div className="four wide column">{visitorTeam}</div>
+          <div className="four wide column">C</div>
+          <div className="four wide column">D</div>
+        </div>
+      );
+    });
+  };
+
   return (
-    <div className="ui grid">
-      <div className="four wide column">A</div>
-      <div className="four wide column">B</div>
-      <div className="four wide column">C</div>
-      <div className="four wide column">D</div>
+    <div>
     </div>
   );
 };
