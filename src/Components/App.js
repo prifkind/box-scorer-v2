@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Row from "./Row";
+import React, {  useState } from "react";
+import Grid from "./Grid";
 import getGames from "../api/games";
 
 const App = () => {
   const [games, setGames] = useState([]);
-
-  // useEffect(() => {
-  //   query();
-  // }, [])
 
   const querySubmit = async () => {
     getGames.get("games", {}).then((response) => {
@@ -16,7 +12,7 @@ const App = () => {
     });
   };
 
-  return <Row querySubmit={querySubmit} games={games}/>;
+  return <Grid querySubmit={querySubmit} games={games}/>;
 };
 
 export default App;
