@@ -4,8 +4,7 @@ import Row from "./Row";
 const Grid = ({ querySubmit, games }) => {
   useEffect(() => {
     querySubmit();
-
-  }, [querySubmit]);
+  }, []);
 
   const renderBox = games.map((g) => {
     const homeTeam = g.home_team.full_name;
@@ -16,14 +15,21 @@ const Grid = ({ querySubmit, games }) => {
     return (
       <Row
         key={id}
-        homeTeam={homeTeam}
-        visitorTeam={visitorTeam}
-        homeTeamScore={homeTeamScore}
-        visitorTeamScore={visitorTeamScore}
+        column1={homeTeam}
+        column2={visitorTeam}
+        column3={homeTeamScore}
+        column4={visitorTeamScore}
       />
     );
   });
-  return <div>{renderBox}</div>;
+  return (
+    <div>
+      <div className="ui grid">
+        <Row column1='Home' column2='Visitor' column3='Home Score' column4='Visitor Score' />
+        <div>{renderBox}</div>
+      </div>
+    </div>
+  );
 };
 
 export default Grid;
