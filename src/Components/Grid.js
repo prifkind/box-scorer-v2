@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "../styles.css";
 import Row from "./Row";
 
 const Grid = ({ querySubmit, games }) => {
@@ -24,9 +25,14 @@ const Grid = ({ querySubmit, games }) => {
   });
   return (
     <div>
-      <div className="ui grid">
-        <Row column1='Home' column2='Visitor' column3='Home Score' column4='Visitor Score' />
-        <div>{renderBox}</div>
+      <div>
+        <Row
+          column1="Home"
+          column2="Visitor"
+          column3="Home Score"
+          column4="Visitor Score"
+        />
+        {/* <div>{renderBox}</div> */}
       </div>
     </div>
   );
