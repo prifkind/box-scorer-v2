@@ -25,15 +25,15 @@ const Grid = ({ querySubmit, games }) => {
   });
   return (
     <div>
-      <div>
+      <div className="gridHeader">
         <Row
           column1="Home"
           column2="Visitor"
           column3="Home Score"
           column4="Visitor Score"
         />
-        {/* <div>{renderBox}</div> */}
       </div>
+      <div>{renderBox}</div>
     </div>
   );
 };
