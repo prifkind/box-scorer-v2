@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
-.grid {
+.gridFlex {
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
@@ -10,7 +10,6 @@
 
 .gridHeader {
   text-transform: uppercase;
-
 }
 
 .gridRow {
