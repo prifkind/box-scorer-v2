@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Selector = () => {
-  const [selectDate, setSelectDate] = useState("");
+const Selector = ({ setSelectDate}) => {
+
 
   return (
     <div>
