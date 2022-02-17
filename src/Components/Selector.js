@@ -1,10 +1,9 @@
 import React from "react";
 
-const Selector = ({ setSelectDate}) => {
-
-
+const Selector = ({ setSelectDate }) => {
   return (
     <div>
+      <div>Select a Day</div>
       <select
         className="ui selection dropdown"
         onChange={(e) => {

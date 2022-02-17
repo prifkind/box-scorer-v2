@@ -32,8 +32,9 @@ const Grid = ({ querySubmit, games, selectDate }) => {
           column3="Home Score"
           column4="Visitor Score"
         />
+
+        <div>{renderBox}</div>
       </div>
-      <div>{renderBox}</div>
     </div>
   );
 };

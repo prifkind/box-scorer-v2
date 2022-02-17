@@ -5,7 +5,7 @@ import Selector from "./Selector";
 
 const App = () => {
   const [games, setGames] = useState([]);
-  const [selectDate, setSelectDate] = useState("");
+  const [selectDate, setSelectDate] = useState("Today");
 
   const setYesterday = (date, days) => {
     var dt = new Date(date);
