@@ -5,7 +5,7 @@ import Row from "./Row";
 const Grid = ({ querySubmit, games, selectDate }) => {
   useEffect(() => {
     querySubmit(selectDate);
-  }, [selectDate]);
+  },[selectDate]);
 
   const renderBox = games.map((g) => {
     const homeTeam = g.home_team.full_name;
@@ -13,6 +13,7 @@ const Grid = ({ querySubmit, games, selectDate }) => {
     const visitorTeam = g.visitor_team.full_name;
     const visitorTeamScore = g.visitor_team_score;
     const id = g.id;
+
     return (
       <Row
         key={id}
@@ -23,6 +24,7 @@ const Grid = ({ querySubmit, games, selectDate }) => {
       />
     );
   });
+
   return (
     <div>
       <div className="gridHeader">
@@ -32,7 +34,6 @@ const Grid = ({ querySubmit, games, selectDate }) => {
           column3="Home Score"
           column4="Visitor Score"
         />
-
         <div>{renderBox}</div>
       </div>
     </div>
