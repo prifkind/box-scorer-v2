@@ -5,7 +5,7 @@ import Row from "./Row";
 const Grid = ({ querySubmit, games, selectDate }) => {
   useEffect(() => {
     querySubmit(selectDate);
-  },[selectDate]);
+  }, [selectDate]);
 
   const renderBox = games.map((g) => {
     const homeTeam = g.home_team.full_name;
@@ -27,14 +27,16 @@ const Grid = ({ querySubmit, games, selectDate }) => {
 
   return (
     <div>
-      <div className="gridHeader">
-        <Row
-          column1="Home"
-          column2="Visitor"
-          column3="Home Score"
-          column4="Visitor Score"
-        />
-        <div>{renderBox}</div>
+      <div className="gridflex">
+        <div className="gridHeader">
+          <Row
+            column1="Home"
+            column2="Visitor"
+            column3="Home Score"
+            column4="Visitor Score"
+          />
+          <div>{renderBox}</div>
+        </div>
       </div>
     </div>
   );
