@@ -2,7 +2,6 @@
 
 .gridFlex {
   display: flex;
-  flex-flow: row;
   flex-wrap: nowrap;
   justify-content: start;
   max-width: 80%;
@@ -11,7 +10,7 @@
 
 .gridHeader {
   text-transform: uppercase;
-  padding: 10px 0 0 0;
+  padding: 20px 0 10px 0;
 }
 
 .gridRow {
@@ -21,7 +20,7 @@
 }
 
 .gridColumn {
-  min-width: 25%;
+  min-width: 20%;
   border: 1px solid black;
   justify-content: space-evenly;
   text-align: center;
@@ -33,4 +32,5 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  padding: 10px 0 0 10px;
 }
