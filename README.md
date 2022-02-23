@@ -7,4 +7,5 @@ This React app queries an API and returns a box score of NBA games for a specifi
 To run:
 
 1. Download the repo and install dependencies
-2. npm run start
+2. Enable this [CORS proxy](https://cors-anywhere.herokuapp.com/)
+3. npm start 
