@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
-  max-width: 80%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -15,14 +14,14 @@
 
 .gridRow {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+ justify-content: space-evenly;
+  max-width: 80%;
+  padding: 0 0 0 10px;
 }
 
 .gridColumn {
-  min-width: 20%;
+  min-width: 25%;
   border: 1px solid black;
-  justify-content: space-evenly;
   text-align: center;
 }
 
