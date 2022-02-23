@@ -4,7 +4,7 @@ const Selector = ({ setSelectDate }) => {
   return (
     <div>
       <div className="selector">
-        <div>Select a Day</div>
+        <div>Select a Day:</div>
         <select
           className="ui selection dropdown"
           onChange={(e) => {

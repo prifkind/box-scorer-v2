@@ -27,16 +27,14 @@ const Grid = ({ querySubmit, games, selectDate }) => {
 
   return (
     <div>
-      <div className="gridflex">
-        <div className="gridHeader">
+      <div className="container">
           <Row
             column1="Home"
             column2="Visitor"
             column3="Home Score"
             column4="Visitor Score"
           />
-          <div>{renderBox}</div>
-        </div>
+        <div>{renderBox}</div>
       </div>
     </div>
   );

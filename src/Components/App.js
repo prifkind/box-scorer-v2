@@ -46,7 +46,7 @@ const App = () => {
   };
 
   //Conditional  to show loading spinner or render components
-  if (spinnerStatus != 1) {
+  if (spinnerStatus !== 1) {
     querySubmit();
     return <Spinner />;
   } else {
