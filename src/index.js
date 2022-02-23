@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -15,3 +16,10 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+=======
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./Components/App";
+
+ReactDOM.render(<App />, document.querySelector("#root"));
+>>>>>>> ad359f0abb3edf35a521bec051deb9a0f4fd67fc

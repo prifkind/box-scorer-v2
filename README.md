@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+This React app queries an API and returns a box score of NBA games for a specific date range.  Highlights include:
+
+- Re-usable React function components
+- State and lifecycle managed via React Hooks
+- Styling done via CSS classes using Flexbox
+
+To run:
+
+1. Download the repo and install dependencies
+2. Enable this [CORS proxy](https://cors-anywhere.herokuapp.com/)
+3. npm start 
+>>>>>>> ad359f0abb3edf35a521bec051deb9a0f4fd67fc
