@@ -1,20 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 
 .gridFlex {
   display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-  max-width: 80%;
+  flex-wrap: nowrap;
+  justify-content: start;
   font-family: "Montserrat", sans-serif;
 }
 
 .gridHeader {
   text-transform: uppercase;
+  padding: 20px 0 10px 0;
 }
 
 .gridRow {
+  display: flex;
+ justify-content: space-evenly;
+  max-width: 80%;
+  padding: 0 0 0 10px;
+}
+
+.gridColumn {
   min-width: 25%;
   border: 1px solid black;
-  justify-content: space-evenly;
   text-align: center;
+}
+
+.selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 0 10px;
 }

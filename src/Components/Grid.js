@@ -13,6 +13,7 @@ const Grid = ({ querySubmit, games, selectDate }) => {
     const visitorTeam = g.visitor_team.full_name;
     const visitorTeamScore = g.visitor_team_score;
     const id = g.id;
+
     return (
       <Row
         key={id}
@@ -23,17 +24,19 @@ const Grid = ({ querySubmit, games, selectDate }) => {
       />
     );
   });
+
   return (
     <div>
-      <div className="gridHeader">
-        <Row
-          column1="Home"
-          column2="Visitor"
-          column3="Home Score"
-          column4="Visitor Score"
-        />
-
-        <div>{renderBox}</div>
+      <div className="gridflex">
+        <div className="gridHeader">
+          <Row
+            column1="Home"
+            column2="Visitor"
+            column3="Home Score"
+            column4="Visitor Score"
+          />
+          <div>{renderBox}</div>
+        </div>
       </div>
     </div>
   );
